@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html ng-app="mallApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mall</title>
+    <link href="css/swiper-3.3.1.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+</head>
+<body class="main">
+<div class="header">
+    <div class="header-back click"></div>
+    <div class="header-title">商城首页</div>
+    <div class="header-share click">
+    </div>
+    <div class="header-item" style="display: none">
+        <a href="#/search" id="header-item-search">
+            <svg version="1.1"  xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="16px" height="16px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.092,30.072l-0.709,0.709c-0.785,0.784-2.055,0.784-2.838,0l-5.676-5.674
+	    c-0.656-0.658-0.729-1.644-0.281-2.412l-3.104-3.102c-1.668,1.238-3.727,1.979-5.964,1.979c-5.54,0-10.031-4.491-10.031-10.031
+	    C1.489,6.001,5.98,1.51,11.52,1.51c5.541,0,10.031,4.491,10.031,10.032c0,2.579-0.98,4.923-2.58,6.7l3.035,3.035
+	    c0.768-0.447,1.754-0.375,2.41,0.283l5.676,5.674C30.875,28.019,30.875,29.289,30.092,30.072z M19.023,11.5
+	    c0-4.155-3.369-7.523-7.524-7.523c-1.157,0-2.241,0.282-3.221,0.749c0.523,0.538,1.313,1.342,1.355,1.342
+	    c-0.815,0-3.484,2.669-3.484,3.547c0-0.042-0.849-0.849-1.404-1.372C4.267,9.231,3.975,10.327,3.975,11.5
+	    c0,4.155,3.369,7.523,7.524,7.523S19.023,15.655,19.023,11.5z"/>
+        </svg>
+        </a>
+        <a href="#/cart" id="header-item-cart">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
+	 width="16px" height="16px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.5,14.5v-3h3.75l7.532-7.532c-0.05-0.149-0.095-0.302-0.095-0.468
+	c0-0.829,0.672-1.5,1.5-1.5c0.829,0,1.5,0.671,1.5,1.5c0,0.828-0.671,1.5-1.5,1.5c-0.111,0-0.208-0.041-0.312-0.063L6.312,11.5
+	h19.354l-6.527-6.579C19.012,4.956,18.888,5,18.75,5c-0.829,0-1.5-0.672-1.5-1.5c0-0.829,0.671-1.5,1.5-1.5
+	c0.828,0,1.5,0.671,1.5,1.5c0,0.153-0.045,0.293-0.088,0.433l7.566,7.567H31.5v3H0.5z M25.369,29.402
+	c-0.293,1.172-1.105,1.106-1.105,1.106L7.669,30.541c-0.846,0-1.074-1.073-1.074-1.073L2.209,15.514l27.574-0.026L25.369,29.402z
+	 M10.5,17.5h-1v5h1V17.5z M10.5,23.5h-1v5h1V23.5z M12.5,17.5h-1v5h1V17.5z M12.5,23.5h-1v5h1V23.5z M14.5,17.5h-1v5h1V17.5z
+	 M14.5,23.5h-1v5h1V23.5z M16.5,17.5h-1v5h1V17.5z M16.5,23.5h-1v5h1V23.5z M18.5,17.5h-1v5h1V17.5z M18.5,23.5h-1v5h1V23.5z
+	 M20.5,17.5h-1v5h1V17.5z M20.5,23.5h-1v5h1V23.5z M22.5,17.5h-1v5h1V17.5z M22.5,23.5h-1v5h1V23.5z"/>
+</svg>
+        </a>
+
+        <a id="header-item-share">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="30px" height="30px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<g>
+	<g>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M15.521,12.065l4.263,4.264l8.025-8.025l4.144,4.144
+			l0.005-12.375L19.505,0l4.041,4.041L15.521,12.065z M31.89,17.513l-3.071-3.115l0.057,14.41l-25.62,0.014L3.279,3.267L17.61,3.205
+			l-3.199-3.2H3.212c-1.767,0-3.2,1.433-3.2,3.2v25.596c0,1.768,1.433,3.199,3.2,3.199h25.596c1.768,0,3.2-1.432,3.2-3.199
+			L31.89,17.513z"/>
+	</g>
+</g>
+</svg>
+        </a>
+
+        <a id="header-item-back" onClick="history.back(-1);">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M2.602,10.374l10.703,10.295v-6.237
+	c3.242,0,11.496,0.072,11.496,8.56c0,4.443-3.152,8.151-7.344,9.009c6.734-0.914,11.941-6.624,11.941-13.607
+	c0-12.974-13.86-13.083-16.094-13.083V0L2.602,10.374z"/>
+</svg>
+
+        </a>
+    </div>
+</div>
+<div ng-view class="ng-body"></div>
+</body>
+<script src="lib/jquery-1.12.4.min.js"></script>
+<script src="lib/swiper-3.3.1.min.js"></script>
+<script src="lib/angular.min.js"></script>
+<script src="lib/angular-route.min.js"></script>
+<script src="lib/angular-resource.min.js"></script>
+<script src="lib/angular-loader.min.js"></script>
+<script src="lib/angular-cookies.min.js"></script>
+<script src="js/app.js"></script>
+</html>

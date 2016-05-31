@@ -1,0 +1,155 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'jsrsasign' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData jsrsasign
+8 silly fetchNamedPackageData jsrsasign
+9 silly mapToRegistry name jsrsasign
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/jsrsasign
+13 verbose request uri https://registry.npmjs.org/jsrsasign
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 17:05:15
+16 verbose request id 2eeb236af265fade
+17 http request GET https://registry.npmjs.org/jsrsasign
+18 http 200 https://registry.npmjs.org/jsrsasign
+19 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+19 verbose headers   etag: '"7FZH6CV2IK8LOJRI9FXORLULJ"',
+19 verbose headers   'content-type': 'application/json',
+19 verbose headers   'content-encoding': 'gzip',
+19 verbose headers   'cache-control': 'max-age=300',
+19 verbose headers   'content-length': '4868',
+19 verbose headers   'accept-ranges': 'bytes',
+19 verbose headers   date: 'Tue, 31 May 2016 09:05:32 GMT',
+19 verbose headers   via: '1.1 varnish',
+19 verbose headers   age: '0',
+19 verbose headers   connection: 'keep-alive',
+19 verbose headers   'x-served-by': 'cache-lcy1128-LCY',
+19 verbose headers   'x-cache': 'HIT',
+19 verbose headers   'x-cache-hits': '1',
+19 verbose headers   'x-timer': 'S1464685532.185868,VS0,VE171',
+19 verbose headers   vary: 'Accept-Encoding' }
+20 silly get cb [ 200,
+20 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+20 silly get     etag: '"7FZH6CV2IK8LOJRI9FXORLULJ"',
+20 silly get     'content-type': 'application/json',
+20 silly get     'content-encoding': 'gzip',
+20 silly get     'cache-control': 'max-age=300',
+20 silly get     'content-length': '4868',
+20 silly get     'accept-ranges': 'bytes',
+20 silly get     date: 'Tue, 31 May 2016 09:05:32 GMT',
+20 silly get     via: '1.1 varnish',
+20 silly get     age: '0',
+20 silly get     connection: 'keep-alive',
+20 silly get     'x-served-by': 'cache-lcy1128-LCY',
+20 silly get     'x-cache': 'HIT',
+20 silly get     'x-cache-hits': '1',
+20 silly get     'x-timer': 'S1464685532.185868,VS0,VE171',
+20 silly get     vary: 'Accept-Encoding' } ]
+21 verbose get saving jsrsasign to C:\Users\明多牧\AppData\Roaming\npm-cache\registry.npmjs.org\jsrsasign\.cache.json
+22 silly install normalizeTree
+23 silly loadCurrentTree Finishing
+24 silly loadIdealTree Starting
+25 silly install loadIdealTree
+26 silly cloneCurrentTree Starting
+27 silly install cloneCurrentTreeToIdealTree
+28 silly cloneCurrentTree Finishing
+29 silly loadShrinkwrap Starting
+30 silly install loadShrinkwrap
+31 silly loadShrinkwrap Finishing
+32 silly loadAllDepsIntoIdealTree Starting
+33 silly install loadAllDepsIntoIdealTree
+34 silly resolveWithNewModule jsrsasign@5.0.12 checking installable status
+35 silly cache add args [ 'jsrsasign', null ]
+36 verbose cache add spec jsrsasign
+37 silly cache add parsed spec Result {
+37 silly cache add   raw: 'jsrsasign',
+37 silly cache add   scope: null,
+37 silly cache add   name: 'jsrsasign',
+37 silly cache add   rawSpec: '',
+37 silly cache add   spec: '*',
+37 silly cache add   type: 'range' }
+38 silly addNamed jsrsasign@*
+39 verbose addNamed "*" is a valid semver range for jsrsasign
+40 silly addNameRange { name: 'jsrsasign', range: '*', hasData: false }
+41 silly mapToRegistry name jsrsasign
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry uri https://registry.npmjs.org/jsrsasign
+45 verbose addNameRange registry:https://registry.npmjs.org/jsrsasign not in flight; fetching
+46 verbose get https://registry.npmjs.org/jsrsasign not expired, no request
+47 silly addNameRange number 2 { name: 'jsrsasign', range: '*', hasData: true }
+48 silly addNameRange versions [ 'jsrsasign',
+48 silly addNameRange   [ '0.0.1',
+48 silly addNameRange     '0.0.2',
+48 silly addNameRange     '0.0.3',
+48 silly addNameRange     '4.8.2',
+48 silly addNameRange     '4.8.3',
+48 silly addNameRange     '4.8.4',
+48 silly addNameRange     '4.8.5',
+48 silly addNameRange     '4.8.6',
+48 silly addNameRange     '4.9.0',
+48 silly addNameRange     '4.9.1',
+48 silly addNameRange     '4.9.2',
+48 silly addNameRange     '5.0.0',
+48 silly addNameRange     '5.0.1',
+48 silly addNameRange     '5.0.2',
+48 silly addNameRange     '5.0.5',
+48 silly addNameRange     '5.0.6',
+48 silly addNameRange     '5.0.7',
+48 silly addNameRange     '5.0.8',
+48 silly addNameRange     '5.0.9',
+48 silly addNameRange     '5.0.10',
+48 silly addNameRange     '5.0.11',
+48 silly addNameRange     '5.0.12' ] ]
+49 silly addNamed jsrsasign@5.0.12
+50 verbose addNamed "5.0.12" is a plain semver version for jsrsasign
+51 silly mapToRegistry name jsrsasign
+52 silly mapToRegistry using default registry
+53 silly mapToRegistry registry https://registry.npmjs.org/
+54 silly mapToRegistry uri https://registry.npmjs.org/jsrsasign
+55 verbose addRemoteTarball https://registry.npmjs.org/jsrsasign/-/jsrsasign-5.0.12.tgz not in flight; adding
+56 verbose addRemoteTarball [ 'https://registry.npmjs.org/jsrsasign/-/jsrsasign-5.0.12.tgz',
+56 verbose addRemoteTarball   'd62ea366518a52ff3b00ff8139c082f0903cac50' ]
+57 info retry fetch attempt 1 at 17:05:48
+58 info attempt registry request try #1 at 17:05:48
+59 http fetch GET https://registry.npmjs.org/jsrsasign/-/jsrsasign-5.0.12.tgz
+60 http fetch 200 https://registry.npmjs.org/jsrsasign/-/jsrsasign-5.0.12.tgz
+61 info retry will retry, error on last attempt: Error: read ECONNRESET
+62 info retry will retry, error on last attempt: Error: read ECONNRESET
+63 silly fetchAndShaCheck shasum d62ea366518a52ff3b00ff8139c082f0903cac50
+64 silly rollbackFailedOptional Starting
+65 silly rollbackFailedOptional Finishing
+66 silly runTopLevelLifecycles Starting
+67 silly runTopLevelLifecycles Finishing
+68 silly install printInstalled
+69 verbose stack Error: shasum check failed for C:\Users\明多牧\AppData\Local\Temp\npm-5424-b5cc9f24\registry.npmjs.org\jsrsasign\-\jsrsasign-5.0.12.tgz
+69 verbose stack Expected: d62ea366518a52ff3b00ff8139c082f0903cac50
+69 verbose stack Actual:   7a9b5bf3b02252881e64e1007e6ba4067a108605
+69 verbose stack From:     https://registry.npmjs.org/jsrsasign/-/jsrsasign-5.0.12.tgz
+69 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\sha\index.js:25:8
+69 verbose stack     at ReadStream.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\sha\index.js:72:7)
+69 verbose stack     at emitNone (events.js:72:20)
+69 verbose stack     at ReadStream.emit (events.js:166:7)
+69 verbose stack     at endReadableNT (_stream_readable.js:905:12)
+69 verbose stack     at doNTCallback2 (node.js:450:9)
+69 verbose stack     at process._tickCallback (node.js:364:17)
+70 verbose cwd D:\project\html\mall
+71 error Windows_NT 10.0.10240
+72 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "jsrsasign"
+73 error node v5.0.0
+74 error npm  v3.3.6
+75 error shasum check failed for C:\Users\明多牧\AppData\Local\Temp\npm-5424-b5cc9f24\registry.npmjs.org\jsrsasign\-\jsrsasign-5.0.12.tgz
+75 error Expected: d62ea366518a52ff3b00ff8139c082f0903cac50
+75 error Actual:   7a9b5bf3b02252881e64e1007e6ba4067a108605
+75 error From:     https://registry.npmjs.org/jsrsasign/-/jsrsasign-5.0.12.tgz
+76 error If you need help, you may report this error at:
+76 error     <https://github.com/npm/npm/issues>
+77 verbose exit [ 1, true ]

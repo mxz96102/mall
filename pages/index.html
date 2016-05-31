@@ -1,0 +1,35 @@
+<!--This is index by Doming-->
+
+<div class="index-slide swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/index.jpg" /></div>
+        <div class="swiper-slide"><img src="img/index.jpg" /></div>
+        <div class="swiper-slide"><img src="img/index.jpg" /></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+<div class="index-divide">
+    <div class="index-divide-name index-divide-select" di-data="hot">热门</div>
+    <div class="index-divide-name" di-data="clothes">服装</div>
+    <div class="index-divide-name" di-data="skin">护肤</div>
+    <div class="index-divide-name" di-data="life">生活</div>
+</div>
+<div class="index-item">
+    <ul>
+        <li ng-repeat="item in items">
+            <a href="#/item/{{item.id}}">
+            <div class="index-item-img">
+                <img ng-src="{{item.img}}" />
+                <div class="index-hot-label">HOT</div>
+            </div>
+                </a>
+            <p class="index-item-title">{{item.title}}</p>
+            <p class="index-item-sale">已售出{{item.sale}}件</p>
+            <hr />
+            <p class="index-item-price">￥{{item.price}}</p>
+        </li>
+
+    </ul>
+</div>
